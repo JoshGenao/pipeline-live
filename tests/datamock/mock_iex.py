@@ -238,3 +238,8 @@ def get_chart(stocks):
              'vwap': 43.3733,
              'label': 'Aug 22',
              'changeOverTime': 0.0457294943140576}]}
+
+def get_balancesheet(stocks):
+    stocks().get_balancesheet.return_value = {
+        
+    }

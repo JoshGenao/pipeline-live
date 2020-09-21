@@ -75,3 +75,9 @@ class IEXEarningsLoader(IEXEventLoader):
     def _load(self):
         log.info('Loading Earnings')
         return iex.earnings()
+
+class IEXBalanceSheetLoader(IEXEventLoader):
+
+    def _load(self):
+        log.info('Loading Balance Sheet')
+        return iex.balance_sheet()

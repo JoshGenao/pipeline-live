@@ -19,6 +19,9 @@ def test_IEXKeyStats(refdata, stocks, data_path):
 
     assert out[marketcap][0][0] != 0.0
 
+def test_IEXBalanceSheet(refdata, stocks, data_path):
+    mock_iex.get_available_symbols(refdata)
+    mock_iex.get_key_stats
 
 def test_pricing_loader(refdata, stocks, data_path):
     mock_iex.get_available_symbols(refdata)
